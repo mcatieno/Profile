@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Vanilla Javascript</title>
+        <style>
+             .redtext{color: white;background-color: blue;width:80%;}
+        </style>
+    </head>
+    <body style="margin:10px auto;">
+        <div id="mytest" style="margin: auto;display: flex;justify-content: center;align-items: center;flex-direction: column;">
+          <div><h1 style="text-align: center;color: red;">Coding in Javascript</h1></div>  
+           <div><p style="padding: 2em;border: 2px double #bbbbbb;width: 90%;text-align: center;">Understanding Arrow Functions</p></div> 
+        </div>
+    </body>
+    <script type="text/javascript">
+              
+       
+      const mimi = document.getElementById("mytest");
+      const items = document.querySelectorAll(".item");
+      
+      /* Toggle mobile menu */
+      function paint() {
+    mimi.querySelector("p").innerHTML="Vanilla Javascript";
+    mimi.querySelector("p").setAttribute("class","redtext")
+      }
+    
+      function remove_paint() {
+    
+    mimi.querySelector("p").removeAttribute("class","redtext")
+      }
+      /* Activate Submenu */
+      function toggleItem() {
+      
+      }
+      
+      /* Close Submenu From Anywhere */
+      function closeSubmenu(e) {
+    
+      }
+      /* Event Listeners */
+      mimi.addEventListener("mouseover", paint, true);
+      mimi.addEventListener("click", remove_paint, true);
+
+      </script>
+</html>
